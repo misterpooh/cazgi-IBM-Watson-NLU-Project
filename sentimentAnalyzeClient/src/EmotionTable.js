@@ -13,12 +13,7 @@ class EmotionTable extends React.Component {
               Hands-on React lab to extract the emotions. If you are stuck,
               please click the instructions to see how to implement a map*/
               Object.entries(this.props.emotions).map(function(mapentry) {
-                return (
-                    <tr>
-                    <td>{mapentry[0]}</td>
-                    <td>{mapentry[1]}</td>
-                    </tr>
-                )
+                return <tr><td>{mapentry[0]}</td><td>{mapentry[1]}</td></tr>
                 })
             }
             </tbody>
